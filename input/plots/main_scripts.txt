@@ -1,0 +1,3 @@
+# One figure per line: `plotipus <kind> [options]`, e.g.
+# line --path my_study --datafile Efficiency --configs hd_1x2x6 --names marley -x Energy -y Efficiency --errory
+line --path my_study --datafile Efficiency --configs hd_1x2x6 vd_1x8x14 --names marley marley -x Energy -y Efficiency --by_config --errory --errory_type bands --labelx 'True Energy (MeV)' --labely 'Efficiency (%)' --dune_label simulation

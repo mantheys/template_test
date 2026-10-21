@@ -1,2 +1,0 @@
-# LaTeX (and HTML) summary table: one row per configuration, one column per variable
-table --path examples --datafile Summary -y Value --variables Efficiency Purity Resolution
