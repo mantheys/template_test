@@ -1,0 +1,14 @@
+{
+  "plot_settings": {
+    "auto_title": false
+  },
+  "mappings": {
+    "config_dict": {"toy": "Toy MC", "hd_1x2x6": "HD 1x2x6", "vd_1x8x14": "VD 1x8x14"},
+    "config_color": {"toy": "#0072B2", "hd_1x2x6": "#D55E00", "vd_1x8x14": "#56B4E9"},
+    "config_line": {"hd_1x2x6": "-", "vd_1x8x14": "--"},
+    "name_dict": {"throws": "$1\\sigma$, $2\\sigma$, $3\\sigma$ contours", "marley": "MARLEY $\\nu_e$ CC", "gamma": "Radiological $\\gamma$"}
+  },
+  "labels": {
+    "redundant_legend_titles": ["sample", "config"]
+  }
+}

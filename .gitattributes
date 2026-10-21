@@ -1,0 +1,2 @@
+# Result files are stored with Git LFS (git lfs install once per machine)
+input/data/**/*.pkl filter=lfs diff=lfs merge=lfs -text

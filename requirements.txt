@@ -1,0 +1,8 @@
+# Official DUNE matplotlib style (pinned release; setup.sh can pick the latest)
+dune_plot_style @ https://github.com/DUNE/dune_plot_style/archive/refs/tags/v01_03.tar.gz
+# Plots and tables from pickled DataFrames, driven by command lists. Pinned so
+# figures stay reproducible; bump the commit to pick up new plotipus features.
+plotipus @ git+https://github.com/mantheys/plotipus.git@d70a4fca69870ceb95a0a73f1529adbada352e80
+numpy
+pandas
+scipy

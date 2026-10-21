@@ -1,0 +1,15 @@
+# The five examples of the official dune_plot_style package
+# (examples/matplotlib/example.py), drawn by plotipus from the pickles written
+# by scripts/make_example_data.py. Each line is one figure in output/plots.
+
+# 1D histogram of raw values (example.matplotlib.hist1D)
+hist --path examples --datafile Hist1D -x Values --hue Sample --bins 50 --rangex -5 5 --labelx 'x label' --labely 'y label' --dune_label simulation
+# Data with a stored Gaussian fit and (data - fit)/fit below (example.matplotlib.datamc)
+line --path examples --datafile DataFit -x Bins -y Counts --plot_type errorbar --errory --fit --chi2 --no-fit_type_subtitle --lower residual --lower_rangey -0.99 0.99 --rangex -5 5 --fitlegendposition 0.70 0.62 --labelx 'x label' --labely 'y label' --dune_label preliminary
+# 2D histogram (example.matplotlib.hist2D) and 1, 2, 3 sigma contours of its chi2
+map --path examples --datafile Throws2D -x X -y Y --bins 100 --rangex -5 5 --rangey -5 5 --labelx 'x label' --labely 'y label' --dune_label simulation
+map --path examples --datafile Contour2D --configs toy --names throws -x XGrid -y YGrid -z Chi2 --contour --contour_sigmas 1 2 3 --contour_linestyles solid dotted dashed --background none --labelx 'x label' --labely 'y label' --dune_label simulation
+# Stacked histograms (example.matplotlib.histstacked)
+line --path examples --datafile HistFamily -x Bins -y Counts --hue Sample --stacked --rangex -12 16 --legend_loc 'upper right' --labelx 'x label' --labely 'y label' --dune_label wip
+# Overlaid histograms (example.matplotlib.histoverlay)
+hist --path examples --datafile HistFamilyRaw -x Values --hue Sample --bins 100 --rangex -12 16 --legend_loc 'upper right' --labelx 'x label' --labely 'y label' --dune_label wip

@@ -1,0 +1,13 @@
+# plotipus project: `plotipus run <list>` draws every command of
+# input/plots/<list>_scripts.txt into output/plots (`python run.py` runs all lists).
+[project]
+data_root = "input/data"
+plots = "input/plots"
+tables = "input/tables"
+output = "output"
+style = ["config/style.json"]
+python_path = ["src"]
+plugins = ["dune_plotipus"]
+
+[settings]
+dune_label = "simulation"
